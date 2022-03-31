@@ -1,0 +1,254 @@
+[
+  {
+    "id": 71368,
+    "parent_id": 71367,
+    "status": "active",
+    "currency": "EUR",
+    "version": "6.3.1",
+    "prices_include_tax": false,
+    "date_created": "2022-03-27T20:01:32",
+    "date_modified": "2022-03-27T20:07:03",
+    "discount_total": "0.00",
+    "discount_tax": "0.00",
+    "shipping_total": "0.00",
+    "shipping_tax": "0.00",
+    "cart_tax": "0.00",
+    "total": "0.00",
+    "total_tax": "0.00",
+    "customer_id": 10,
+    "order_key": "wc_order_e1OUdPzoQRTC6",
+    "billing": {
+      "first_name": "Manolito",
+      "last_name": "Gafotas",
+      "company": "",
+      "address_1": "C/ Marx",
+      "address_2": "",
+      "city": "Huercal",
+      "state": "AV",
+      "postcode": "04230",
+      "country": "ES",
+      "email": "lokilla@gmail.com",
+      "phone": "142537822"
+    },
+    "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "state": "",
+      "postcode": "",
+      "country": "",
+      "phone": ""
+    },
+    "payment_method": "",
+    "payment_method_title": "",
+    "customer_ip_address": "79.144.12.1",
+    "customer_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.46",
+    "created_via": "checkout",
+    "customer_note": "",
+    "date_completed": null,
+    "date_paid": "2022-03-27T20:01:32",
+    "number": "71368",
+    "meta_data": [
+      {
+        "id": 447956,
+        "key": "is_vat_exempt",
+        "value": "no"
+      },
+      {
+        "id": 447983,
+        "key": "_stripe_source_id",
+        "value": ""
+      }
+    ],
+    "line_items": [
+      {
+        "id": 14,
+        "name": "Suscripción Emx (un Año) (Test)",
+        "product_id": 71015,
+        "variation_id": 0,
+        "quantity": 2,
+        "tax_class": "",
+        "subtotal": "0.00",
+        "subtotal_tax": "0.00",
+        "total": "0.00",
+        "total_tax": "0.00",
+        "taxes": [],
+        "meta_data": [],
+        "sku": "EMX1M-1-1",
+        "price": 0,
+        "parent_name": null
+      }
+    ],
+    "tax_lines": [],
+    "shipping_lines": [],
+    "fee_lines": [],
+    "coupon_lines": [],
+    "date_created_gmt": "2022-03-27T20:01:32",
+    "date_modified_gmt": "2022-03-27T20:07:03",
+    "date_completed_gmt": null,
+    "date_paid_gmt": "2022-03-27T20:01:32",
+    "billing_period": "year",
+    "billing_interval": "1",
+    "start_date_gmt": "2022-03-27T20:01:32",
+    "trial_end_date_gmt": "",
+    "next_payment_date_gmt": "2023-03-27T20:01:32",
+    "payment_retry_date_gmt": "",
+    "last_payment_date_gmt": "2022-03-27T20:01:32",
+    "cancelled_date_gmt": "",
+    "end_date_gmt": "",
+    "resubscribed_from": "",
+    "resubscribed_subscription": "",
+    "removed_line_items": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/subscriptions/71368"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/subscriptions"
+        }
+      ],
+      "customer": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/customers/10"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/orders/71367"
+        }
+      ]
+    }
+  },
+  {
+    "id": 71160,
+    "parent_id": 71159,
+    "status": "active",
+    "currency": "EUR",
+    "version": "6.3.1",
+    "prices_include_tax": false,
+    "date_created": "2022-03-15T09:42:10",
+    "date_modified": "2022-03-27T19:46:18",
+    "discount_total": "0.00",
+    "discount_tax": "0.00",
+    "shipping_total": "0.00",
+    "shipping_tax": "0.00",
+    "cart_tax": "0.00",
+    "total": "0.00",
+    "total_tax": "0.00",
+    "customer_id": 5,
+    "order_key": "wc_order_zF0IiqwxP3FMi",
+    "billing": {
+      "first_name": "Manuel",
+      "last_name": "Glez",
+      "company": "",
+      "address_1": "Marx",
+      "address_2": "",
+      "city": "HUERCAL DE ALMERIA",
+      "state": "AL",
+      "postcode": "04230",
+      "country": "ES",
+      "email": "ghd@mecom",
+      "phone": "61612621"
+    },
+    "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "state": "",
+      "postcode": "",
+      "country": "",
+      "phone": ""
+    },
+    "payment_method": "",
+    "payment_method_title": "",
+    "customer_ip_address": "83.53.221.162",
+    "customer_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.55",
+    "created_via": "checkout",
+    "customer_note": "",
+    "date_completed": null,
+    "date_paid": "2022-03-15T09:42:10",
+    "number": "71160",
+    "meta_data": [
+      {
+        "id": 445179,
+        "key": "is_v,at_exempt",
+        "value": "no"
+      },
+      {
+        "id": 447886,
+        "key": "_stripe_source_id",
+        "value": ""
+      }
+    ],
+    "line_items": [
+      {
+        "id": 5,
+        "name": "Suscripción Emx (un Año) (Test)",
+        "product_id": 71015,
+        "variation_id": 0,
+        "quantity": 1,
+        "tax_class": "",
+        "subtotal": "0.00",
+        "subtotal_tax": "0.00",
+        "total": "0.00",
+        "total_tax": "0.00",
+        "taxes": [],
+        "meta_data": [],
+        "sku": "EMX1M-1-1",
+        "price": 0,
+        "parent_name": null
+      }
+    ],
+    "tax_lines": [],
+    "shipping_lines": [],
+    "fee_lines": [],
+    "coupon_lines": [],
+    "date_created_gmt": "2022-03-15T09:42:10",
+    "date_modified_gmt": "2022-03-27T19:46:18",
+    "date_completed_gmt": null,
+    "date_paid_gmt": "2022-03-15T09:42:10",
+    "billing_period": "year",
+    "billing_interval": "1",
+    "start_date_gmt": "2022-03-15T09:42:09",
+    "trial_end_date_gmt": "",
+    "next_payment_date_gmt": "2023-03-15T09:42:09",
+    "payment_retry_date_gmt": "",
+    "last_payment_date_gmt": "2022-03-15T09:42:09",
+    "cancelled_date_gmt": "",
+    "end_date_gmt": "",
+    "resubscribed_from": "",
+    "resubscribed_subscription": "",
+    "removed_line_items": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/subscriptions/71160"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/subscriptions"
+        }
+      ],
+      "customer": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/customers/5"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://tefix.es/wp-json/wc/v3/orders/71159"
+        }
+      ]
+    }
+  }
+]

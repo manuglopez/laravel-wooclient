@@ -1,0 +1,61 @@
+{
+    "name": "manuglopez/laravel-wooclient",
+    "description": "Woocommerce api client for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+		"Woocommerce client for laravel"
+	],
+    "authors": [
+        {
+            "name": "Manuel Glez",
+            "email": "mglopez@me.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable":true,
+    "require-dev": {
+        "fakerphp/faker": "^1.19",
+        "illuminate/contracts": "^9.0",
+        "illuminate/support": "^9.0",
+        "mockery/mockery": "^1.5",
+        "orchestra/testbench": "^7.2",
+        "phpunit/phpunit": "^9.5",
+        "symfony/thanks": "^1.0",
+        "orchestra/database": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Manuglopez\\LaravelWooclient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Manuglopez\\LaravelWooclient\\Tests\\":"tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/thanks": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manuglopez\\LaravelWooclient\\LaravelWooclientServiceProvider"
+            ],
+            "aliases": {
+                "Manuglopez": "Manuglopez\\LaravelWooclient\\LaravelWooclientFacade"
+            }
+        }
+    },
+    "require": {
+        "automattic/woocommerce": "^3.1"
+    }
+}
