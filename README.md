@@ -1,7 +1,6 @@
 # Laravel-Wooclient
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Travis](https://img.shields.io/travis/manuglopez/laravel-wooclient.svg?style=flat-square)]()
 [![Total Downloads](https://img.shields.io/packagist/dt/manuglopez/laravel-wooclient.svg?style=flat-square)](https://packagist.org/packages/manuglopez/laravel-wooclient)
 
 This Laravel package offer a wrapper for https://github.com/woocommerce/wc-api-php
@@ -17,9 +16,18 @@ composer require manuglopez/laravel-wooclient
 
 ## Usage
 
-Write a few lines about the usage of this package.
+Before using this client you will need to publish config file.
 
+```bash
+php artisan vendor:publish --provider="Manuglopez\LaravelWooclient\LaravelWooclientServiceProvider"
+```
 
+Values are expected to find in your .env file with apropiate key and credentials
+
+After that you can use the Facade as 
+```php
+LaravelWooclientFacade::get('/woocommerce_endpoint', [])
+```
 ## Testing
 
 Run the tests with:
