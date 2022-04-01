@@ -9,9 +9,6 @@ use Illuminate\Support\ServiceProvider;
 
 class LaravelWooclientServiceProvider extends ServiceProvider
 {
-    /**
-     * @var Repository|Application|mixed
-     */
 
     /**
      * Bootstrap any application services.

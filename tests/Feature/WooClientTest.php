@@ -29,7 +29,8 @@ class WooClientTest extends TestCase
         $this->assertIsArray(json_decode($response));
     }
 
-    public function testFacade()
+
+    public function testFacade():void
     {
         $service = $this->getMockBuilder(LaravelWooclient::class)
             ->disableOriginalConstructor()
@@ -41,6 +42,7 @@ class WooClientTest extends TestCase
             );
 
         LaravelWooclientFacade::shouldReceive('get')->once()->with('/subscriptions', []);
+        // @phpstan-ignore-next-line
         LaravelWooclientFacade::get('/subscriptions', []);
     }
 }

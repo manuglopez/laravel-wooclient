@@ -1,9 +1,10 @@
-<?php
+<?php declare( strict_types = 1 );
 
 namespace Manuglopez\LaravelWooclient;
 
 use Automattic\WooCommerce\Client;
 use Automattic\WooCommerce\HttpClient\HttpClientException;
+use stdClass;
 
 class LaravelWooclient
 {
@@ -31,16 +32,16 @@ class LaravelWooclient
         );
     }
 
-    public function get($endpoint, $parameters)
+    public function get($endpoint, $parameters=[]): stdClass|string
     {
         try {
-            return $this->woocommerce->get($endpoint, $parameters = []);
+            return $this->woocommerce->get($endpoint, $parameters );
         } catch (HttpClientException $e) {
             return $e->getMessage();
         }
     }
 
-    public function post($endpoint, $data)
+    public function post($endpoint, $data):stdClass|string
     {
         try {
             return $this->woocommerce->post($endpoint, $data);
@@ -49,7 +50,7 @@ class LaravelWooclient
         }
     }
 
-    public function put($endpoint, $data)
+    public function put($endpoint, $data):stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $data);
@@ -58,7 +59,7 @@ class LaravelWooclient
         }
     }
 
-    public function delete($endpoint, $parameters = [])
+    public function delete($endpoint, $parameters = []):stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $parameters);
