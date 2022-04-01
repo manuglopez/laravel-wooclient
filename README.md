@@ -1,7 +1,10 @@
 # Laravel-Wooclient
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/manuglopez/laravel-wooclient.svg?style=flat-square)](https://packagist.org/packages/manuglopez/laravel-wooclient)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://manuglez.mit-license.org/)
+[![Total Downloads](https://img.shields.io/packagist/dt/manuglopez/laravel-wooclient.svg)](https://packagist.org/packages/manuglopez/laravel-wooclient)
+[![php-cs-fixer](https://github.com/manuglopez/laravel-wooclient/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/manuglopez/laravel-wooclient/actions)
+[![phpstan](https://github.com/manuglopez/laravel-wooclient/actions/workflows/phpstan.yml/badge.svg)](https://github.com/manuglopez/laravel-wooclient/actions)
+[![Tests](https://github.com/manuglopez/laravel-wooclient/actions/workflows/run-test.yml/badge.svg)](https://github.com/manuglopez/laravel-wooclient/actions)
 
 This Laravel package offer a wrapper for https://github.com/woocommerce/wc-api-php
 

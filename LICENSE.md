@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Manuglopez<mailto:mglopez@me.com>
+Copyright (c) 2022 [Manuglopez](https://mglopez.com) [mglopez@me.com](mailto:mglopez@me.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
