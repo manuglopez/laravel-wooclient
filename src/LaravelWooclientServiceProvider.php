@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 namespace Manuglopez\LaravelWooclient;
 
@@ -8,7 +7,6 @@ use Illuminate\Support\ServiceProvider;
 
 class LaravelWooclientServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *

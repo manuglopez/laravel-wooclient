@@ -29,8 +29,7 @@ class WooClientTest extends TestCase
         $this->assertIsArray(json_decode($response));
     }
 
-
-    public function testFacade():void
+    public function testFacade(): void
     {
         $service = $this->getMockBuilder(LaravelWooclient::class)
             ->disableOriginalConstructor()
