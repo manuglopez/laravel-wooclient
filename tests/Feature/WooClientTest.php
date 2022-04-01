@@ -2,12 +2,10 @@
 
 namespace Manuglopez\LaravelWooclient\Tests\Feature;
 
-
 use Illuminate\Support\Facades\File;
 use Manuglopez\LaravelWooclient\LaravelWooclient;
 use Manuglopez\LaravelWooclient\LaravelWooclientFacade;
 use Manuglopez\LaravelWooclient\Tests\TestCase;
-
 
 class WooClientTest extends TestCase
 {
@@ -18,8 +16,6 @@ class WooClientTest extends TestCase
      */
     public function testLaravelWooClient()
     {
-
-
         $service = $this->getMockBuilder(LaravelWooclient::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -28,11 +24,9 @@ class WooClientTest extends TestCase
             ->willReturn(
                 File::get(dirname(__DIR__, 1) . '/stubs/success.json')
             );
-        $response=$service->get('/suscriptions',[]);
+        $response = $service->get('/suscriptions', []);
 
         $this->assertIsArray(json_decode($response));
-
-
     }
 
     public function testFacade()
@@ -46,8 +40,7 @@ class WooClientTest extends TestCase
                 File::get(dirname(__DIR__, 1) . '/stubs/success.json')
             );
 
-        LaravelWooclientFacade::shouldReceive('get')->once()->with('/subscriptions',[]);
-        LaravelWooclientFacade::get('/subscriptions',[]);
-
+        LaravelWooclientFacade::shouldReceive('get')->once()->with('/subscriptions', []);
+        LaravelWooclientFacade::get('/subscriptions', []);
     }
 }

@@ -13,7 +13,6 @@ class LaravelWooclientServiceProvider extends ServiceProvider
      * @var Repository|Application|mixed
      */
 
-
     /**
      * Bootstrap any application services.
      *
@@ -24,7 +23,6 @@ class LaravelWooclientServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/laravel-wooclient.php', 'laravel-wooclient');
 
         $this->publishConfig();
-
     }
 
     /**
@@ -61,6 +59,4 @@ class LaravelWooclientServiceProvider extends ServiceProvider
             return new LaravelWooclient($wooClient);
         });
     }
-
-
 }

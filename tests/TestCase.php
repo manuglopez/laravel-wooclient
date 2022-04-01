@@ -7,7 +7,7 @@ use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
-    public function setup() : void
+    public function setup(): void
     {
         parent::setUp();
         $this->withoutExceptionHandling();
@@ -15,8 +15,6 @@ class TestCase extends BaseTestCase
 
         $this->loadMigrationsFrom(__DIR__ . '/../src/database/migrations');
         $this->loadLaravelMigrations(['--database' => 'testing']);
-
-
     }
 
     protected function getEnvironmentSetUp($app)
@@ -24,9 +22,9 @@ class TestCase extends BaseTestCase
         $app['config']->set('app.key', 'AckfSECXIvnK5r28GVIWUAxmbBSjTsmF');
         $app['config']->set('database.default', 'testing');
         $app['config']->set('database.connections.testing', [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => '',
+            'prefix' => '',
         ]);
     }
 
