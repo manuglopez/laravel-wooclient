@@ -22,7 +22,7 @@ class LaravelWooclient
         );
     }
 
-    public function get($endpoint, $parameters = []): stdClass|string
+    public function get(string $endpoint, array $parameters): stdClass|string
     {
         try {
             return $this->woocommerce->get($endpoint, $parameters);
@@ -31,7 +31,7 @@ class LaravelWooclient
         }
     }
 
-    public function post($endpoint, $data): stdClass|string
+    public function post(string $endpoint, array $data): stdClass|string
     {
         try {
             return $this->woocommerce->post($endpoint, $data);
@@ -40,7 +40,7 @@ class LaravelWooclient
         }
     }
 
-    public function put($endpoint, $data): stdClass|string
+    public function put(string $endpoint, array $data): stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $data);
@@ -49,7 +49,7 @@ class LaravelWooclient
         }
     }
 
-    public function delete($endpoint, $parameters = []): stdClass|string
+    public function delete(string $endpoint, array $parameters): stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $parameters);
