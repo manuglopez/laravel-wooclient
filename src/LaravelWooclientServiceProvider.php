@@ -3,13 +3,11 @@
 namespace Manuglopez\LaravelWooclient;
 
 use Automattic\WooCommerce\Client;
-use Illuminate\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelWooclientServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *
