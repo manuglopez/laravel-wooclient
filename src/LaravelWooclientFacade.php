@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Manuglopez\LaravelWooclient;
 
@@ -11,7 +12,7 @@ class LaravelWooclientFacade extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'laravel-wooclient';
     }

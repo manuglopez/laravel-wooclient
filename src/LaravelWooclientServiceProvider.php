@@ -1,10 +1,9 @@
 <?php
+declare(strict_types=1);
 
 namespace Manuglopez\LaravelWooclient;
 
 use Automattic\WooCommerce\Client;
-use Illuminate\Config\Repository;
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelWooclientServiceProvider extends ServiceProvider

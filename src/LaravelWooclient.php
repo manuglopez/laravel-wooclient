@@ -1,4 +1,5 @@
-<?php declare( strict_types = 1 );
+<?php
+declare(strict_types=1);
 
 namespace Manuglopez\LaravelWooclient;
 
@@ -10,18 +11,6 @@ class LaravelWooclient
 {
     protected Client $woocommerce;
 
-    /*public function __construct(string $woocommerce_url, string $ck, string $cs, array $options)
-    {
-
-        $this->woocommerce = new  Client(
-            $woocommerce_url,
-            $ck,
-            $cs,
-            $options
-
-        );
-
-    }*/
     public function __construct(Client $client)
     {
         $this->woocommerce = new $client(
@@ -32,16 +21,16 @@ class LaravelWooclient
         );
     }
 
-    public function get($endpoint, $parameters=[]): stdClass|string
+    public function get(string $endpoint, $parameters = []): stdClass|string
     {
         try {
-            return $this->woocommerce->get($endpoint, $parameters );
+            return $this->woocommerce->get($endpoint, $parameters);
         } catch (HttpClientException $e) {
             return $e->getMessage();
         }
     }
 
-    public function post($endpoint, $data):stdClass|string
+    public function post(string $endpoint, array $data): stdClass|string
     {
         try {
             return $this->woocommerce->post($endpoint, $data);
@@ -50,7 +39,7 @@ class LaravelWooclient
         }
     }
 
-    public function put($endpoint, $data):stdClass|string
+    public function put(string $endpoint, array $data): stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $data);
@@ -59,7 +48,7 @@ class LaravelWooclient
         }
     }
 
-    public function delete($endpoint, $parameters = []):stdClass|string
+    public function delete(string $endpoint, $parameters = []): stdClass|string
     {
         try {
             return $this->woocommerce->put($endpoint, $parameters);
