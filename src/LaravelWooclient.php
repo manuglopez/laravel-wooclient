@@ -2,7 +2,6 @@
 
 namespace Manuglopez\LaravelWooclient;
 
-
 use Automattic\WooCommerce\Client;
 use Automattic\WooCommerce\HttpClient\HttpClientException;
 
@@ -24,7 +23,7 @@ class LaravelWooclient
     }*/
     public function __construct(Client $client)
     {
-        $this->woocommerce= new $client(
+        $this->woocommerce = new $client(
             config('laravel-wooclient.woocommerce_url'),
             config('laravel-wooclient.ck'),
             config('laravel-wooclient.cs'),
@@ -35,11 +34,10 @@ class LaravelWooclient
     public function get($endpoint, $parameters)
     {
         try {
-            return $this->woocommerce->get($endpoint, $parameters=[]);
+            return $this->woocommerce->get($endpoint, $parameters = []);
         } catch (HttpClientException $e) {
             return $e->getMessage();
         }
-
     }
 
     public function post($endpoint, $data)
